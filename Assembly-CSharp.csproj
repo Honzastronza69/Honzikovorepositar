@@ -58,7 +58,9 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerController 1.cs" />
+    <Compile Include="Assets\TankMovement.cs" />
+    <Compile Include="Assets\Mousefollow.cs" />
+    <Compile Include="Assets\Projektyl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
