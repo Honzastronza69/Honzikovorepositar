@@ -377,6 +377,7 @@
 "Assets/MovementWASD.cs"
 "Assets/Movementšipky.cs"
 "Assets/Projektyl.cs"
+"Assets/Střílení.cs"
 "Assets/TankMovement.cs"
 -langversion:9.0
 

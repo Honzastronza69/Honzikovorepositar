@@ -63,6 +63,7 @@
     <Compile Include="Assets\Movementšipky.cs" />
     <Compile Include="Assets\Mousefollow.cs" />
     <Compile Include="Assets\Projektyl.cs" />
+    <Compile Include="Assets\Střílení.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
