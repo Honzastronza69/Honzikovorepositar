@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
+  - Mapa
   layers:
   - Default
   - TransparentFX
@@ -11,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - "v\xFDbuch"
   - 
   - 
   - 
@@ -43,6 +45,9 @@ TagManager:
     locked: 0
   - name: map
     uniqueID: 585024259
+    locked: 0
+  - name: Wall
+    uniqueID: 148598955
     locked: 0
   - name: Objects
     uniqueID: 1010854493
