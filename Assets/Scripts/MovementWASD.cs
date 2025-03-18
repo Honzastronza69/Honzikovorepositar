@@ -4,24 +4,21 @@ using UnityEngine;
 
 public class MovementWASD : MonoBehaviour
 {
-    public float moveSpeed = 10f; // Speed of forward/backward movement
-    public float rotateSpeed = 10f; // Speed of rotation
+    public float moveSpeed = 10f; 
+    public float rotateSpeed = 10f; 
 
-    private Rigidbody2D rb; // Reference to the Rigidbody2D
+    private Rigidbody2D rb;
 
     void Start()
     {
-        // Get the Rigidbody2D component attached to the tank
         rb = GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
-        // Initialize input variables.
         float moveInput = 0f;
         float rotateInput = 0f;
 
-        // Check for up/down arrow keys for forward/backward movement.
         if (Input.GetKey(KeyCode.W))
         {
             moveInput += 1f;
@@ -31,7 +28,6 @@ public class MovementWASD : MonoBehaviour
             moveInput -= 1f;
         }
 
-        // Check for right/left arrow keys for rotation.
         if (Input.GetKey(KeyCode.D))
         {
             rotateInput += 1f;
@@ -41,11 +37,11 @@ public class MovementWASD : MonoBehaviour
             rotateInput -= 1f;
         }
 
-        // Move the tank forward/backward.
+        // pohyb tanku dopøedu a dozádu
         Vector2 moveDirection = transform.up * moveInput * moveSpeed * Time.fixedDeltaTime;
         rb.MovePosition(rb.position + moveDirection);
 
-        // Rotate the tank.
+        // Rotace tankiu
         float rotation = -rotateInput * rotateSpeed * Time.fixedDeltaTime;
         rb.MoveRotation(rb.rotation + rotation);
     }
